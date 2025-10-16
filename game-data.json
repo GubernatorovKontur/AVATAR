@@ -1,0 +1,251 @@
+{
+  "teams": [
+    {
+      "clan": "Клан воздуха",
+      "team": "ОСП2 ССП1 ЦСП - МСК Москва Ковалев М.",
+      "leadPoints": 1,
+      "paymentPoints": 27,
+      "totalPoints": 28
+    },
+    {
+      "clan": "Клан воды",
+      "team": "ОСП5 ССП1 ЦП - Запад Поставки",
+      "leadPoints": 0,
+      "paymentPoints": 24,
+      "totalPoints": 24
+    },
+    {
+      "clan": "Клан воды",
+      "team": "ОСП2 ССП1 ЦП - Запад Поставки",
+      "leadPoints": 3,
+      "paymentPoints": 14,
+      "totalPoints": 17
+    },
+    {
+      "clan": "Клан воздуха",
+      "team": "ОСП1 ССП2 ЦСП - МСК Удаленка Бочарова О.",
+      "leadPoints": 3,
+      "paymentPoints": 4,
+      "totalPoints": 7
+    },
+    {
+      "clan": "Клан воздуха",
+      "team": "ОСП2 ССП2 ЦСП - МСК Клин Бочарова О.",
+      "leadPoints": 2,
+      "paymentPoints": 3,
+      "totalPoints": 4
+    },
+    {
+      "clan": "Клан воздуха",
+      "team": "ОСП1 ССП1 ЦСП - МСК Москва Лобанов С.",
+      "leadPoints": 4,
+      "paymentPoints": 0,
+      "totalPoints": 4
+    },
+    {
+      "clan": "Клан воды",
+      "team": "ОСП1 ССП1 ЦП - Запад Поставки",
+      "leadPoints": 0,
+      "paymentPoints": 2,
+      "totalPoints": 2
+    },
+    {
+      "clan": "Клан воды",
+      "team": "ОСП4 ССП1 ЦП - Запад Поставки",
+      "leadPoints": 0,
+      "paymentPoints": 2,
+      "totalPoints": 2
+    },
+    {
+      "clan": "Клан воздуха",
+      "team": "ОСП4 ССП1 ЦСП - МСК Москва Лобанов С.",
+      "leadPoints": 1,
+      "paymentPoints": 1,
+      "totalPoints": 2
+    },
+    {
+      "clan": "Клан воздуха",
+      "team": "ОСП3 ССП2 ЦСП - МСК Клин Бочарова О.",
+      "leadPoints": 2,
+      "paymentPoints": 0,
+      "totalPoints": 2
+    },
+    {
+      "clan": "Клан воды",
+      "team": "ОСП3 ССП1 ЦП - Запад Поставки",
+      "leadPoints": 0,
+      "paymentPoints": 1,
+      "totalPoints": 1
+    }
+  ],
+  "employees": [
+    {
+      "clan": "Клан воздуха",
+      "name": "Китайцева Надежда Анзоровна",
+      "leadPoints": 0,
+      "paymentPoints": 25,
+      "totalPoints": 25
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Бикбаева Марина Константиновна",
+      "leadPoints": 1,
+      "paymentPoints": 11,
+      "totalPoints": 12
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Балашова Наталья Николаевна",
+      "leadPoints": 0,
+      "paymentPoints": 11,
+      "totalPoints": 11
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Шведов Андрей Игоревич",
+      "leadPoints": 0,
+      "paymentPoints": 11,
+      "totalPoints": 11
+    },
+    {
+      "clan": "Клан воздуха",
+      "name": "Зайцева Ольга Юрьевна",
+      "leadPoints": 2,
+      "paymentPoints": 2,
+      "totalPoints": 4
+    },
+    {
+      "clan": "Клан воздуха",
+      "name": "Морозова Валентина Николаевна",
+      "leadPoints": 1,
+      "paymentPoints": 2,
+      "totalPoints": 3
+    },
+    {
+      "clan": "Клан воздуха",
+      "name": "Верховых Светлана Сергеевна",
+      "leadPoints": 1,
+      "paymentPoints": 1,
+      "totalPoints": 2
+    },
+    {
+      "clan": "Клан воздуха",
+      "name": "Малышева Яна Витальевна",
+      "leadPoints": 1,
+      "paymentPoints": 2,
+      "totalPoints": 2
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Тихонова Гульнара Идрисовна",
+      "leadPoints": 0,
+      "paymentPoints": 2,
+      "totalPoints": 2
+    },
+    {
+      "clan": "Клан воздуха",
+      "name": "Кирсанова Анастасия Евгеньевна",
+      "leadPoints": 1,
+      "paymentPoints": 1,
+      "totalPoints": 2
+    },
+    {
+      "clan": "Клан воздуха",
+      "name": "Лапшина Юлия Александровна",
+      "leadPoints": 2,
+      "paymentPoints": 0,
+      "totalPoints": 2
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Петрова Анастасия Сергеевна",
+      "leadPoints": 1,
+      "paymentPoints": 1,
+      "totalPoints": 2
+    },
+    {
+      "clan": "Клан воздуха",
+      "name": "Шиханова Юлия Васильевна",
+      "leadPoints": 1,
+      "paymentPoints": 1,
+      "totalPoints": 2
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Трофимова Екатерина Александровна",
+      "leadPoints": 1,
+      "paymentPoints": 1,
+      "totalPoints": 2
+    },
+    {
+      "clan": "Клан воздуха",
+      "name": "Иванова Ирина Юрьевна",
+      "leadPoints": 2,
+      "paymentPoints": 0,
+      "totalPoints": 2
+    },
+    {
+      "clan": "Клан воздуха",
+      "name": "Михайловская Светлана Константиновна",
+      "leadPoints": 1,
+      "paymentPoints": 0,
+      "totalPoints": 1
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Абдуллаева Сараи Интигам Кызы",
+      "leadPoints": 0,
+      "paymentPoints": 1,
+      "totalPoints": 1
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Беляева Наталья Александровна",
+      "leadPoints": 0,
+      "paymentPoints": 1,
+      "totalPoints": 1
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Меркурьева Елена Вячеславовна",
+      "leadPoints": 0,
+      "paymentPoints": 1,
+      "totalPoints": 1
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Сагирова Елена Александровна",
+      "leadPoints": 0,
+      "paymentPoints": 1,
+      "totalPoints": 1
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Степанищева Ирина Евгеньевна",
+      "leadPoints": 0,
+      "paymentPoints": 1,
+      "totalPoints": 1
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Яковлева Людмила Петровна",
+      "leadPoints": 0,
+      "paymentPoints": 1,
+      "totalPoints": 1
+    },
+    {
+      "clan": "Клан воздуха",
+      "name": "Вербушкина Полина Сергеевна",
+      "leadPoints": 0,
+      "paymentPoints": 1,
+      "totalPoints": 1
+    },
+    {
+      "clan": "Клан воздуха",
+      "name": "Кузь Софья Викторовна",
+      "leadPoints": 1,
+      "paymentPoints": 0,
+      "totalPoints": 1
+    }
+  ]
+}
