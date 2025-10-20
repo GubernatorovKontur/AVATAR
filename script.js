@@ -15,6 +15,9 @@ class EywaGame {
         // Баллы по сотрудникам - обнуляем все
         this.employeePoints = {};
         
+        // Массив сотрудников с ролями
+        this.employees = [];
+        
         // Добавляем всех сотрудников с 0 баллами
         const allEmployees = [
             // Племя Воды
@@ -73,6 +76,9 @@ class EywaGame {
             console.log('Количество команд:', data.teams.length);
             console.log('Количество сотрудников:', data.employees.length);
             
+            // Сохраняем статистику кланов
+            this.clanStats = data.clanStats;
+            
             // Парсим данные команд
             this.parseTeamData(data.teams);
             
@@ -123,6 +129,9 @@ class EywaGame {
 
     parseEmployeeData(employees) {
         console.log('Парсим данные сотрудников:', employees.length);
+        
+        // Сохраняем данные сотрудников с ролями
+        this.employees = employees;
         
         employees.forEach(employee => {
             console.log('Сотрудник:', employee.name, 'Клан:', employee.clan, 'Лиды:', employee.leadPoints, 'Оплаты:', employee.paymentPoints, 'Баллы:', employee.totalPoints);
@@ -526,10 +535,15 @@ class EywaGame {
         const symbol = branch === 'moscow' ? '🌀' : '🌊';
         const color = branch === 'moscow' ? (type === 'lead' ? 'белый' : 'зеленый') : (type === 'lead' ? 'розовый' : 'синий');
         
+        // Находим роль сотрудника
+        const employee = this.employees && this.employees.find ? this.employees.find(emp => emp.name === employeeName) : null;
+        const roleInfo = employee ? `${employee.roleEmoji} ${employee.role}` : 'На\'ви';
+        
         // Показываем красивое модальное окно вместо alert
         this.showLeadPopup({
             company: `${symbol} ${branchName}`,
             employee: employeeName,
+            role: roleInfo,
             type: typeName,
             color: color,
             number: number
@@ -539,11 +553,13 @@ class EywaGame {
     showLeadPopup(lead) {
         const popup = document.getElementById('leadPopup');
         const company = document.getElementById('leadCompany');
+        const role = document.getElementById('leadRole');
         const employee = document.getElementById('leadEmployee');
         const type = document.getElementById('leadType');
         
-        if (popup && company && employee && type) {
+        if (popup && company && role && employee && type) {
             company.textContent = lead.company;
+            role.textContent = lead.role || 'На\'ви';
             employee.textContent = lead.employee;
             type.textContent = lead.type;
             
@@ -647,7 +663,7 @@ class EywaGame {
         }
         if (moscowPayments) moscowPayments.textContent = this.moscowStats.payments;
         if (moscowPoints) moscowPoints.textContent = this.moscowStats.points;
-        if (moscowAmount) moscowAmount.textContent = this.moscowStats.amount.toLocaleString('ru-RU');
+        if (moscowAmount) moscowAmount.textContent = (this.clanStats?.air?.totalAmount || 0).toLocaleString('ru-RU');
         
         if (westLeads) {
             westLeads.textContent = this.westStats.leads;
@@ -655,7 +671,7 @@ class EywaGame {
         }
         if (westPayments) westPayments.textContent = this.westStats.payments;
         if (westPoints) westPoints.textContent = this.westStats.points;
-        if (westAmount) westAmount.textContent = this.westStats.amount.toLocaleString('ru-RU');
+        if (westAmount) westAmount.textContent = (this.clanStats?.water?.totalAmount || 0).toLocaleString('ru-RU');
         
         if (totalLeads) {
             totalLeads.textContent = this.totalStats.leads;
@@ -663,7 +679,9 @@ class EywaGame {
         }
         if (totalPayments) totalPayments.textContent = this.totalStats.payments;
         if (totalPoints) totalPoints.textContent = this.totalStats.points;
-        if (totalAmount) totalAmount.textContent = this.totalStats.amount.toLocaleString('ru-RU');
+        
+        const totalAmountValue = (this.clanStats?.air?.totalAmount || 0) + (this.clanStats?.water?.totalAmount || 0);
+        if (totalAmount) totalAmount.textContent = totalAmountValue.toLocaleString('ru-RU');
         
         // Update leaderboard with employee points
         this.updateLeaderboard();
@@ -723,9 +741,14 @@ class EywaGame {
                     'Бахур Юлия Александровна', 'Белякова Виктория Владимировна'
                 ].includes(employee);
                 
+                // Находим роль сотрудника
+                const employeeData = this.employees && this.employees.find ? this.employees.find(emp => emp.name === employee) : null;
+                const roleInfo = employeeData ? `${employeeData.roleEmoji} ${employeeData.role}` : 'На\'ви';
+                
                 const pointsText = this.getPointsText(points.total);
                 
                 employeeItem.innerHTML = `
+                    <div class="employee-role">${roleInfo}</div>
                     <span class="employee-name">${employee}</span>
                     <span class="employee-points">${points.total} ${pointsText}</span>
                 `;
