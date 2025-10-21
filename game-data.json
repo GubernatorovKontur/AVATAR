@@ -317,8 +317,8 @@
       "role": "Сторожевой Луча",
       "roleEmoji": "🌞",
       "leadPoints": 0,
-      "paymentPoints": 12,
-      "totalPoints": 12
+      "paymentPoints": 13,
+      "totalPoints": 13
     },
     {
       "clan": "Клан воды",
@@ -329,3 +329,4 @@
     }
   ]
 }
+
