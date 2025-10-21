@@ -5,18 +5,18 @@
       "name": "Западный МРЦ (Племя Воды)",
       "symbol": "🌊",
       "totalAmount": 121634,
-      "leadPoints": 10,
-      "paymentPoints": 91,
-      "totalPoints": 101
+      "leadPoints": 7,
+      "paymentPoints": 56,
+      "totalPoints": 63
     },
     "air": {
       "clan": "Клан воздуха", 
       "name": "Московский МРЦ (Племя Воздуха)",
       "symbol": "🌀",
       "totalAmount": 198862,
-      "leadPoints": 20,
-      "paymentPoints": 40,
-      "totalPoints": 60
+      "leadPoints": 15,
+      "paymentPoints": 72,
+      "totalPoints": 87
     }
   },
   "teams": [
@@ -24,8 +24,8 @@
       "clan": "Клан воды",
       "team": "ОСП5 ССП1 ЦП - Запад Поставки",
       "leadPoints": 0,
-      "paymentPoints": 15,
-      "totalPoints": 15
+      "paymentPoints": 12,
+      "totalPoints": 12
     },
     {
       "clan": "Клан воздуха",
@@ -38,36 +38,36 @@
       "clan": "Клан воды",
       "team": "ОСП2 ССП1 ЦП - Запад Поставки",
       "leadPoints": 4,
-      "paymentPoints": 16,
-      "totalPoints": 20
+      "paymentPoints": 20,
+      "totalPoints": 24
     },
     {
       "clan": "Клан воды",
       "team": "ОСП3 ССП1 ЦП - Запад Поставки",
       "leadPoints": 0,
-      "paymentPoints": 19,
-      "totalPoints": 19
+      "paymentPoints": 16,
+      "totalPoints": 16
     },
     {
       "clan": "Клан воздуха",
       "team": "ОСП1 ССП2 ЦСП - МСК Удаленка Бочарова О.",
       "leadPoints": 4,
-      "paymentPoints": 5,
-      "totalPoints": 9
+      "paymentPoints": 16,
+      "totalPoints": 20
     },
     {
       "clan": "Клан воды",
       "team": "ОСП1 ССП1 ЦП - Запад Поставки",
       "leadPoints": 2,
-      "paymentPoints": 7,
-      "totalPoints": 9
+      "paymentPoints": 4,
+      "totalPoints": 6
     },
     {
       "clan": "Клан воздуха",
       "team": "ОСП2 ССП2 ЦСП - МСК Клин Бочарова О.",
       "leadPoints": 2,
-      "paymentPoints": 4,
-      "totalPoints": 6
+      "paymentPoints": 26,
+      "totalPoints": 28
     },
     {
       "clan": "Клан воздуха",
@@ -80,8 +80,8 @@
       "clan": "Клан воды",
       "team": "ОСП4 ССП1 ЦП - Запад Поставки",
       "leadPoints": 1,
-      "paymentPoints": 5,
-      "totalPoints": 6
+      "paymentPoints": 4,
+      "totalPoints": 5
     },
     {
       "clan": "Клан воздуха",
@@ -159,8 +159,8 @@
       "role": "Хранитель Доверия",
       "roleEmoji": "🦉",
       "leadPoints": 2,
-      "paymentPoints": 16,
-      "totalPoints": 18
+      "paymentPoints": 14,
+      "totalPoints": 16
     },
     {
       "clan": "Клан воздуха",
@@ -222,8 +222,8 @@
       "role": "Страж Баланса",
       "roleEmoji": "♎️",
       "leadPoints": 1,
-      "paymentPoints": 12,
-      "totalPoints": 13
+      "paymentPoints": 11,
+      "totalPoints": 12
     },
     {
       "clan": "Клан воды",
@@ -317,8 +317,8 @@
       "role": "Сторожевой Луча",
       "roleEmoji": "🌞",
       "leadPoints": 0,
-      "paymentPoints": 16,
-      "totalPoints": 16
+      "paymentPoints": 13,
+      "totalPoints": 13
     },
     {
       "clan": "Клан воды",
