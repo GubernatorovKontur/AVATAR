@@ -3385,6 +3385,7 @@ body::before {
     letter-spacing: 1.5px;
     position: relative;
     z-index: 2;
+    white-space: nowrap;
 }
 
 .clan-subtitle {
@@ -3408,8 +3409,10 @@ body::before {
 
 .stats-content .stat-item {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 1.5rem;
     background: 
         linear-gradient(135deg, 
