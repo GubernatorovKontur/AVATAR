@@ -4,19 +4,19 @@
       "clan": "Клан воды",
       "name": "Западный МРЦ (Племя Воды)",
       "symbol": "🌊",
-      "totalAmount": 121634,
-      "leadPoints": 395,
-      "paymentPoints": 572,
-      "totalPoints": 967
+      "totalAmount": 395572,
+      "leadPoints": 10,
+      "paymentPoints": 121,
+      "totalPoints": 131
     },
     "air": {
       "clan": "Клан воздуха", 
       "name": "Московский МРЦ (Племя Воздуха)",
       "symbol": "🌀",
-      "totalAmount": 198862,
-      "leadPoints": 236,
-      "paymentPoints": 414,
-      "totalPoints": 650
+      "totalAmount": 236414,
+      "leadPoints": 23,
+      "paymentPoints": 106,
+      "totalPoints": 129
     }
   },
   "teams": [
