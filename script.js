@@ -357,26 +357,42 @@ class EywaGame {
             points: document.getElementById('totalPoints')
         };
 
-        // Анимируем статистику Московского МРЦ
-        Object.keys(moscowStats).forEach(key => {
-            if (moscowStats[key]) {
-                this.animateCounter(moscowStats[key], 0, this.moscowStats[key], 2000);
-            }
-        });
+        // Анимируем статистику Московского МРЦ из clanStats
+        if (moscowStats.leads && this.clanStats?.air) {
+            this.animateCounter(moscowStats.leads, 0, this.clanStats.air.leadPoints || 0, 2000);
+        }
+        if (moscowStats.payments && this.clanStats?.air) {
+            this.animateCounter(moscowStats.payments, 0, this.clanStats.air.paymentPoints || 0, 2000);
+        }
+        if (moscowStats.points && this.clanStats?.air) {
+            this.animateCounter(moscowStats.points, 0, this.clanStats.air.totalPoints || 0, 2000);
+        }
 
-        // Анимируем статистику Западного МРЦ
-        Object.keys(westStats).forEach(key => {
-            if (westStats[key]) {
-                this.animateCounter(westStats[key], 0, this.westStats[key], 2000);
-            }
-        });
+        // Анимируем статистику Западного МРЦ из clanStats
+        if (westStats.leads && this.clanStats?.water) {
+            this.animateCounter(westStats.leads, 0, this.clanStats.water.leadPoints || 0, 2000);
+        }
+        if (westStats.payments && this.clanStats?.water) {
+            this.animateCounter(westStats.payments, 0, this.clanStats.water.paymentPoints || 0, 2000);
+        }
+        if (westStats.points && this.clanStats?.water) {
+            this.animateCounter(westStats.points, 0, this.clanStats.water.totalPoints || 0, 2000);
+        }
 
-        // Анимируем общую статистику
-        Object.keys(totalStats).forEach(key => {
-            if (totalStats[key]) {
-                this.animateCounter(totalStats[key], 0, this.totalStats[key], 2000);
-            }
-        });
+        // Анимируем общую статистику из clanStats
+        const totalLeadsValue = (this.clanStats?.air?.leadPoints || 0) + (this.clanStats?.water?.leadPoints || 0);
+        const totalPaymentsValue = (this.clanStats?.air?.paymentPoints || 0) + (this.clanStats?.water?.paymentPoints || 0);
+        const totalPointsValue = (this.clanStats?.air?.totalPoints || 0) + (this.clanStats?.water?.totalPoints || 0);
+        
+        if (totalStats.leads) {
+            this.animateCounter(totalStats.leads, 0, totalLeadsValue, 2000);
+        }
+        if (totalStats.payments) {
+            this.animateCounter(totalStats.payments, 0, totalPaymentsValue, 2000);
+        }
+        if (totalStats.points) {
+            this.animateCounter(totalStats.points, 0, totalPointsValue, 2000);
+        }
     }
 
     animateCounter(element, start, end, duration) {
@@ -658,29 +674,32 @@ class EywaGame {
         const totalAmount = document.getElementById('totalAmount');
         
         if (moscowLeads) {
-            moscowLeads.textContent = this.moscowStats.leads;
-            console.log('Московские лиды:', this.moscowStats.leads);
+            moscowLeads.textContent = this.clanStats?.air?.leadPoints || 0;
+            console.log('Московские лиды:', this.clanStats?.air?.leadPoints || 0);
         }
-        if (moscowPayments) moscowPayments.textContent = this.moscowStats.payments;
-        if (moscowPoints) moscowPoints.textContent = this.moscowStats.points;
+        if (moscowPayments) moscowPayments.textContent = this.clanStats?.air?.paymentPoints || 0;
+        if (moscowPoints) moscowPoints.textContent = this.clanStats?.air?.totalPoints || 0;
         if (moscowAmount) moscowAmount.textContent = (this.clanStats?.air?.totalAmount || 0).toLocaleString('ru-RU');
         
         if (westLeads) {
-            westLeads.textContent = this.westStats.leads;
-            console.log('Западные лиды:', this.westStats.leads);
+            westLeads.textContent = this.clanStats?.water?.leadPoints || 0;
+            console.log('Западные лиды:', this.clanStats?.water?.leadPoints || 0);
         }
-        if (westPayments) westPayments.textContent = this.westStats.payments;
-        if (westPoints) westPoints.textContent = this.westStats.points;
+        if (westPayments) westPayments.textContent = this.clanStats?.water?.paymentPoints || 0;
+        if (westPoints) westPoints.textContent = this.clanStats?.water?.totalPoints || 0;
         if (westAmount) westAmount.textContent = (this.clanStats?.water?.totalAmount || 0).toLocaleString('ru-RU');
         
-        if (totalLeads) {
-            totalLeads.textContent = this.totalStats.leads;
-            console.log('Общие лиды:', this.totalStats.leads);
-        }
-        if (totalPayments) totalPayments.textContent = this.totalStats.payments;
-        if (totalPoints) totalPoints.textContent = this.totalStats.points;
-        
+        const totalLeadsValue = (this.clanStats?.air?.leadPoints || 0) + (this.clanStats?.water?.leadPoints || 0);
+        const totalPaymentsValue = (this.clanStats?.air?.paymentPoints || 0) + (this.clanStats?.water?.paymentPoints || 0);
+        const totalPointsValue = (this.clanStats?.air?.totalPoints || 0) + (this.clanStats?.water?.totalPoints || 0);
         const totalAmountValue = (this.clanStats?.air?.totalAmount || 0) + (this.clanStats?.water?.totalAmount || 0);
+        
+        if (totalLeads) {
+            totalLeads.textContent = totalLeadsValue;
+            console.log('Общие лиды:', totalLeadsValue);
+        }
+        if (totalPayments) totalPayments.textContent = totalPaymentsValue;
+        if (totalPoints) totalPoints.textContent = totalPointsValue;
         if (totalAmount) totalAmount.textContent = totalAmountValue.toLocaleString('ru-RU');
         
         // Update leaderboard with employee points
