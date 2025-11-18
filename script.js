@@ -675,26 +675,36 @@ class EywaGame {
         const totalPoints = document.getElementById('totalPoints');
         const totalAmount = document.getElementById('totalAmount');
         
+        const moscowLeadsValue = this.clanStats?.air?.leadPoints ?? 0;
+        const moscowPaymentsValue = this.clanStats?.air?.paymentPoints ?? 0;
+        const moscowPointsValue = this.clanStats?.air?.totalPoints ?? moscowPaymentsValue;
+        const moscowAmountValue = this.clanStats?.air?.totalAmount ?? 0;
+
         if (moscowLeads) {
-            moscowLeads.textContent = this.clanStats?.air?.leadPoints || 0;
-            console.log('Московские лиды:', this.clanStats?.air?.leadPoints || 0);
+            moscowLeads.textContent = moscowLeadsValue;
+            console.log('Московские лиды:', moscowLeadsValue);
         }
-        if (moscowPayments) moscowPayments.textContent = this.clanStats?.air?.paymentPoints || 0;
-        if (moscowPoints) moscowPoints.textContent = this.clanStats?.air?.totalPoints || 0;
-        if (moscowAmount) moscowAmount.textContent = (this.clanStats?.air?.totalAmount || 0).toLocaleString('ru-RU');
+        if (moscowPayments) moscowPayments.textContent = moscowPaymentsValue;
+        if (moscowPoints) moscowPoints.textContent = moscowPointsValue;
+        if (moscowAmount) moscowAmount.textContent = moscowAmountValue.toLocaleString('ru-RU');
         
+        const westLeadsValue = this.clanStats?.water?.leadPoints ?? 0;
+        const westPaymentsValue = this.clanStats?.water?.paymentPoints ?? 0;
+        const westPointsValue = this.clanStats?.water?.totalPoints ?? westPaymentsValue;
+        const westAmountValue = this.clanStats?.water?.totalAmount ?? 0;
+
         if (westLeads) {
-            westLeads.textContent = this.clanStats?.water?.leadPoints || 0;
-            console.log('Западные лиды:', this.clanStats?.water?.leadPoints || 0);
+            westLeads.textContent = westLeadsValue;
+            console.log('Западные лиды:', westLeadsValue);
         }
-        if (westPayments) westPayments.textContent = this.clanStats?.water?.paymentPoints || 0;
-        if (westPoints) westPoints.textContent = this.clanStats?.water?.totalPoints || 0;
-        if (westAmount) westAmount.textContent = (this.clanStats?.water?.totalAmount || 0).toLocaleString('ru-RU');
+        if (westPayments) westPayments.textContent = westPaymentsValue;
+        if (westPoints) westPoints.textContent = westPointsValue;
+        if (westAmount) westAmount.textContent = westAmountValue.toLocaleString('ru-RU');
         
-        const totalLeadsValue = (this.clanStats?.air?.leadPoints || 0) + (this.clanStats?.water?.leadPoints || 0);
-        const totalPaymentsValue = (this.clanStats?.air?.paymentPoints || 0) + (this.clanStats?.water?.paymentPoints || 0);
-        const totalPointsValue = (this.clanStats?.air?.totalPoints || 0) + (this.clanStats?.water?.totalPoints || 0);
-        const totalAmountValue = (this.clanStats?.air?.totalAmount || 0) + (this.clanStats?.water?.totalAmount || 0);
+        const totalLeadsValue = moscowLeadsValue + westLeadsValue;
+        const totalPaymentsValue = moscowPaymentsValue + westPaymentsValue;
+        const totalPointsValue = moscowPointsValue + westPointsValue;
+        const totalAmountValue = moscowAmountValue + westAmountValue;
         
         if (totalLeads) {
             totalLeads.textContent = totalLeadsValue;
