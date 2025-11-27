@@ -4,19 +4,19 @@
       "clan": "Клан воды",
       "name": "Западный МРЦ (Племя Воды)",
       "symbol": "🌊",
-      "totalAmount": 684214,
-      "leadPoints": 21,
-      "paymentPoints": 290,
-      "totalPoints": 311
+      "totalAmount": 749004,
+      "leadPoints": 27,
+      "paymentPoints": 321,
+      "totalPoints": 348
     },
     "air": {
       "clan": "Клан воздуха",
       "name": "Московский МРЦ (Племя Воздуха)",
       "symbol": "🌀",
-      "totalAmount": 887679,
-      "leadPoints": 49,
-      "paymentPoints": 308,
-      "totalPoints": 357
+      "totalAmount": 964499,
+      "leadPoints": 58,
+      "paymentPoints": 289,
+      "totalPoints": 347
     }
   },
   "teams": [],
@@ -24,17 +24,17 @@
     {
       "clan": "Клан воды",
       "name": "Десницкая Ирина Игоревна",
-      "role": "Искатель связей",
-      "roleEmoji": "🧿",
-      "leadPoints": 2,
-      "paymentPoints": 46,
-      "totalPoints": 48
+      "role": "Хранитель доверия",
+      "roleEmoji": "🦉",
+      "leadPoints": 3,
+      "paymentPoints": 47,
+      "totalPoints": 50
     },
     {
       "clan": "Клан воды",
       "name": "Морозова Любовь Константиновна",
-      "role": "Проводник решений",
-      "roleEmoji": "🌎",
+      "role": "Сторожевой луча",
+      "roleEmoji": "🌞",
       "leadPoints": 2,
       "paymentPoints": 31,
       "totalPoints": 33
@@ -42,8 +42,8 @@
     {
       "clan": "Клан воды",
       "name": "Саранцева Алёна Юрьевна",
-      "role": "Сторожевой луча",
-      "roleEmoji": "🌞",
+      "role": "Страж баланса",
+      "roleEmoji": "♎️",
       "leadPoints": 1,
       "paymentPoints": 30,
       "totalPoints": 31
@@ -51,36 +51,20 @@
     {
       "clan": "Клан воды",
       "name": "Трофимова Екатерина Александровна",
-      "role": "Страж баланса",
-      "roleEmoji": "♎️",
-      "leadPoints": 3,
-      "paymentPoints": 27,
-      "totalPoints": 30
-    },
-    {
-      "clan": "Клан воды",
-      "name": "Никулина Юлия Владимировна",
-      "role": "Шаман диалога",
-      "roleEmoji": "💭",
-      "leadPoints": 2,
-      "paymentPoints": 25,
-      "totalPoints": 27
-    },
-    {
-      "clan": "Клан воды",
-      "name": "Меркурьева Елена Вячеславовна",
-      "role": "Алхимик лояльности",
-      "roleEmoji": "🧪",
-      "leadPoints": 0,
-      "paymentPoints": 26,
-      "totalPoints": 26
+      "role": "Сторожевой луча",
+      "roleEmoji": "🌞",
+      "leadPoints": 4,
+      "paymentPoints": 29,
+      "totalPoints": 33
     },
     {
       "clan": "Клан воды",
       "name": "Бикбаева Марина Константиновна",
-      "leadPoints": 4,
-      "paymentPoints": 21,
-      "totalPoints": 25
+      "role": "Шаман диалога",
+      "roleEmoji": "💭",
+      "leadPoints": 5,
+      "paymentPoints": 22,
+      "totalPoints": 27
     },
     {
       "clan": "Клан воды",
@@ -100,8 +84,8 @@
       "clan": "Клан воды",
       "name": "Абдуллаева Сараи Интигам Кызы",
       "leadPoints": 1,
-      "paymentPoints": 11,
-      "totalPoints": 12
+      "paymentPoints": 12,
+      "totalPoints": 13
     },
     {
       "clan": "Клан воды",
@@ -134,9 +118,44 @@
     {
       "clan": "Клан воды",
       "name": "Тихонова Гульнара Идрисовна",
+      "leadPoints": 2,
+      "paymentPoints": 4,
+      "totalPoints": 6
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Булатова Алина Рудольфовна",
       "leadPoints": 1,
-      "paymentPoints": 2,
-      "totalPoints": 3
+      "paymentPoints": 10,
+      "totalPoints": 11
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Тишкина Марина Константиновна",
+      "leadPoints": 1,
+      "paymentPoints": 0,
+      "totalPoints": 0
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Акбашева Айгуль Расимовна",
+      "leadPoints": 0,
+      "paymentPoints": 1,
+      "totalPoints": 1
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Хамидуллина Юлия Олеговна",
+      "leadPoints": 0,
+      "paymentPoints": 1,
+      "totalPoints": 1
+    },
+    {
+      "clan": "Клан воды",
+      "name": "Сабирова Лилия Вилдановна",
+      "leadPoints": 0,
+      "paymentPoints": 11,
+      "totalPoints": 11
     },
     {
       "clan": "Клан воды",
@@ -155,24 +174,24 @@
     {
       "clan": "Клан воздуха",
       "name": "Верховых Светлана Сергеевна",
-      "leadPoints": 4,
+      "leadPoints": 5,
       "paymentPoints": 2,
-      "totalPoints": 6
+      "totalPoints": 7
     },
     {
       "clan": "Клан воздуха",
       "name": "Китайцева Надежда Анзоровна",
-      "role": "Хранитель доверия",
-      "roleEmoji": "🦉",
-      "leadPoints": 5,
+      "role": "Проводник решений",
+      "roleEmoji": "🌎",
+      "leadPoints": 6,
       "paymentPoints": 38,
-      "totalPoints": 43
+      "totalPoints": 44
     },
     {
       "clan": "Клан воздуха",
-      "name": "Кузь Софья Викторовна",
-      "role": "Эмпатийный связник",
-      "roleEmoji": "➰",
+      "name": "Опонасюк Софья Викторовна",
+      "role": "Искатель связей",
+      "roleEmoji": "🧿",
       "leadPoints": 3,
       "paymentPoints": 63,
       "totalPoints": 66
@@ -182,23 +201,23 @@
       "name": "Иванова Ирина Юрьевна",
       "role": "Страж баланса",
       "roleEmoji": "♎️",
-      "leadPoints": 5,
+      "leadPoints": 6,
       "paymentPoints": 4,
-      "totalPoints": 30
+      "totalPoints": 31
     },
     {
       "clan": "Клан воздуха",
       "name": "Кирсанова Анастасия Евгеньевна",
-      "leadPoints": 5,
+      "leadPoints": 6,
       "paymentPoints": 1,
-      "totalPoints": 6
+      "totalPoints": 7
     },
     {
       "clan": "Клан воздуха",
       "name": "Нежинская Анна Васильевна",
-      "leadPoints": 1,
+      "leadPoints": 2,
       "paymentPoints": 0,
-      "totalPoints": 1
+      "totalPoints": 2
     },
     {
       "clan": "Клан воздуха",
@@ -210,45 +229,47 @@
     {
       "clan": "Клан воздуха",
       "name": "Белякова Виктория Владимировна",
-      "role": "Алхимик лояльности",
-      "roleEmoji": "🧪",
+      "role": "Шаман диалога",
+      "roleEmoji": "💭",
       "leadPoints": 2,
       "paymentPoints": 2,
-      "totalPoints": 26
+      "totalPoints": 27
     },
     {
       "clan": "Клан воздуха",
       "name": "Зайцева Ольга Юрьевна",
-      "role": "Хранитель доверия",
-      "roleEmoji": "🦉",
-      "leadPoints": 4,
-      "paymentPoints": 6,
-      "totalPoints": 43
+      "role": "Эмпатийный связник",
+      "roleEmoji": "➰",
+      "leadPoints": 5,
+      "paymentPoints": 32,
+      "totalPoints": 71
     },
     {
       "clan": "Клан воздуха",
       "name": "Малышева Яна Витальевна",
-      "role": "Алхимик лояльности",
-      "roleEmoji": "🧪",
+      "role": "Шаман диалога",
+      "roleEmoji": "💭",
       "leadPoints": 3,
-      "paymentPoints": 3,
-      "totalPoints": 26
+      "paymentPoints": 4,
+      "totalPoints": 27
     },
     {
       "clan": "Клан воздуха",
       "name": "Морозова Валентина Николаевна",
-      "leadPoints": 4,
-      "paymentPoints": 15,
-      "totalPoints": 19
+      "role": "Алхимик лояльности",
+      "roleEmoji": "🧪",
+      "leadPoints": 5,
+      "paymentPoints": 16,
+      "totalPoints": 21
     },
     {
       "clan": "Клан воздуха",
       "name": "Лапшина Юлия Александровна",
       "role": "Страж баланса",
       "roleEmoji": "♎️",
-      "leadPoints": 4,
+      "leadPoints": 5,
       "paymentPoints": 26,
-      "totalPoints": 30
+      "totalPoints": 31
     },
     {
       "clan": "Клан воздуха",
@@ -260,9 +281,9 @@
     {
       "clan": "Клан воздуха",
       "name": "Шиханова Юлия Васильевна",
-      "leadPoints": 6,
+      "leadPoints": 7,
       "paymentPoints": 2,
-      "totalPoints": 8
+      "totalPoints": 9
     }
   ]
 }
